@@ -110,8 +110,10 @@ module.exports = function (grunt) {
       template(context, function (err, html) {
         if (!err) {
           grunt.file.write(f.dest, html);
+          grunt.log.writeln('File ' + f.dest.cyan + ' created.');
           n();
         } else {
+          grunt.log.warn('Error compiling ' + f.src.red + ': ' + err);
           n(err);
         }
       });
