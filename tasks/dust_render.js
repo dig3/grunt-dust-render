@@ -75,6 +75,8 @@ module.exports = function (grunt) {
 
       var template, context;
 
+      // reset cache
+      dust.cache = {};
       // pre-compile the template
       try {
         template = dust.compileFn(grunt.file.read(f.src));
