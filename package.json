@@ -1,7 +1,7 @@
 {
   "name": "grunt-dust-render",
   "description": "Render dustjs templates to html",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/dig3/grunt-dust-render",
   "author": {
     "name": "Diego Gadola",
